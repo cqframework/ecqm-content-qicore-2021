@@ -1,0 +1,3565 @@
+{
+  "resourceType": "Bundle",
+  "id": "BreastCancerScreeningsFHIR-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1133",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1133",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1133"
+      } ],
+      "version": "20190315",
+      "name": "UnilateralMastectomyLeft",
+      "title": "Unilateral Mastectomy Left",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+          "version": "2021",
+          "code": "0HTU0ZZ",
+          "display": "Resection of Left Breast, Open Approach"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "428571003",
+          "display": "Mastectomy of left breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "451211000124109",
+          "display": "Prophylactic mastectomy of left breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726429001",
+          "display": "Radical mastectomy of left breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726435001",
+          "display": "Subcutaneous mastectomy of left breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726437009",
+          "display": "Modified radical mastectomy of left breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "741009001",
+          "display": "Simple mastectomy of left breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "741018004",
+          "display": "Subcutaneous mastectomy of left breast with prosthetic implant (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1133"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.108.12.1018",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1018",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.108.12.1018"
+      } ],
+      "version": "20210304",
+      "name": "Mammography",
+      "title": "Mammography",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "24604-1",
+          "display": "MG Breast Diagnostic Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "24605-8",
+          "display": "MG Breast Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "24606-6",
+          "display": "MG Breast Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "24610-8",
+          "display": "MG Breast Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26175-0",
+          "display": "MG Breast - bilateral Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26176-8",
+          "display": "MG Breast - left Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26177-6",
+          "display": "MG Breast - right Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26287-3",
+          "display": "MG Breast - bilateral Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26289-9",
+          "display": "MG Breast - left Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26291-5",
+          "display": "MG Breast - right Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26346-7",
+          "display": "MG Breast - bilateral Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26347-5",
+          "display": "MG Breast - left Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26348-3",
+          "display": "MG Breast - right Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26349-1",
+          "display": "MG Breast - bilateral Diagnostic Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26350-9",
+          "display": "MG Breast - left Diagnostic Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "26351-7",
+          "display": "MG Breast - right Diagnostic Limited Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "36319-2",
+          "display": "MG Breast 4 Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "36625-2",
+          "display": "MG Breast Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "36626-0",
+          "display": "MG Breast - bilateral Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "36627-8",
+          "display": "MG Breast - left Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "36642-7",
+          "display": "MG Breast - left 2 Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "36962-9",
+          "display": "MG Breast Axillary"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37005-6",
+          "display": "MG Breast - left Magnification"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37006-4",
+          "display": "MG Breast - bilateral MLO"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37016-3",
+          "display": "MG Breast - bilateral Rolled Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37017-1",
+          "display": "MG Breast - left Rolled Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37028-8",
+          "display": "MG Breast Tangential"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37029-6",
+          "display": "MG Breast - bilateral Tangential"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37030-4",
+          "display": "MG Breast - left Tangential"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37037-9",
+          "display": "MG Breast True lateral"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37038-7",
+          "display": "MG Breast - bilateral True lateral"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37052-8",
+          "display": "MG Breast - bilateral XCCL"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37053-6",
+          "display": "MG Breast - left XCCL"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37539-4",
+          "display": "MG Breast Grid Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37542-8",
+          "display": "MG Breast Magnification Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37543-6",
+          "display": "MG Breast - bilateral Magnification Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37551-9",
+          "display": "MG Breast Spot Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37552-7",
+          "display": "MG Breast - bilateral Spot Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37553-5",
+          "display": "MG Breast - left Spot Views compression"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37554-3",
+          "display": "MG Breast - bilateral Magnification and Spot"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37768-9",
+          "display": "MG Breast - right 2 Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37769-7",
+          "display": "MG Breast - right Magnification and Spot"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37770-5",
+          "display": "MG Breast - right Tangential"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37771-3",
+          "display": "MG Breast - right True lateral"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37772-1",
+          "display": "MG Breast - right XCCL"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37773-9",
+          "display": "MG Breast - right Magnification"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37774-7",
+          "display": "MG Breast - right Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "37775-4",
+          "display": "MG Breast - right Rolled Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38070-9",
+          "display": "MG Breast Views for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38071-7",
+          "display": "MG Breast - bilateral Views for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38072-5",
+          "display": "MG Breast - left Views for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38090-7",
+          "display": "MG Breast - bilateral Air gap Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38091-5",
+          "display": "MG Breast - left Air gap Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38807-4",
+          "display": "MG Breast - right Spot Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38820-7",
+          "display": "MG Breast - right Views for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38854-6",
+          "display": "MG Breast - left Magnification and Spot"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "38855-3",
+          "display": "MG Breast - left True lateral"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "39150-8",
+          "display": "FFD mammogram Breast Views Post Localization"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "39152-4",
+          "display": "FFD mammogram Breast Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "39153-2",
+          "display": "FFD mammogram Breast Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "39154-0",
+          "display": "FFD mammogram Breast - bilateral Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "42168-5",
+          "display": "FFD mammogram Breast - right Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "42169-3",
+          "display": "FFD mammogram Breast - left Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "42174-3",
+          "display": "FFD mammogram Breast - bilateral Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "42415-0",
+          "display": "MG Breast - bilateral Views Post Wire Placement"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "42416-8",
+          "display": "MG Breast - left Views Post Wire Placement"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46335-6",
+          "display": "MG Breast - bilateral Single view"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46336-4",
+          "display": "MG Breast - left Single view"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46337-2",
+          "display": "MG Breast - right Single view"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46338-0",
+          "display": "MG Breast - unilateral Single view"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46339-8",
+          "display": "MG Breast - unilateral Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46342-2",
+          "display": "FFD mammogram Breast Views"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46350-5",
+          "display": "MG Breast - unilateral Diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46351-3",
+          "display": "MG Breast - bilateral Displacement Views for Implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46354-7",
+          "display": "FFD mammogram Breast - right Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46355-4",
+          "display": "FFD mammogram Breast - left Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46356-2",
+          "display": "MG Breast - unilateral Screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "46380-2",
+          "display": "MG Breast - unilateral Views for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "48475-8",
+          "display": "MG Breast - bilateral Diagnostic for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "48492-3",
+          "display": "MG Breast - bilateral Screening for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "69150-1",
+          "display": "MG Breast - left Diagnostic for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "69251-7",
+          "display": "MG Breast Views Post Wire Placement"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "69259-0",
+          "display": "MG Breast - right Diagnostic for implant"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "72137-3",
+          "display": "DBT Breast - right diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "72138-1",
+          "display": "DBT Breast - left diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "72139-9",
+          "display": "DBT Breast - bilateral diagnostic"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "72140-7",
+          "display": "DBT Breast - right screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "72141-5",
+          "display": "DBT Breast - left screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "72142-3",
+          "display": "DBT Breast - bilateral screening"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "86462-9",
+          "display": "DBT Breast - unilateral"
+        }, {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "86463-7",
+          "display": "DBT Breast - bilateral"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.108.12.1018"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1134",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1134",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1134"
+      } ],
+      "version": "20190315",
+      "name": "UnilateralMastectomyRight",
+      "title": "Unilateral Mastectomy Right",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+          "version": "2021",
+          "code": "0HTT0ZZ",
+          "display": "Resection of Right Breast, Open Approach"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "12275171000119105",
+          "display": "Postmastectomy lymphedema syndrome of right upper limb (disorder)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "429400009",
+          "display": "Mastectomy of right breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "451201000124106",
+          "display": "Prophylactic mastectomy of right breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726430006",
+          "display": "Radical mastectomy of right breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726434002",
+          "display": "Subcutaneous mastectomy of right breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726436000",
+          "display": "Modified radical mastectomy of right breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "741010006",
+          "display": "Simple mastectomy of right breast (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "741019007",
+          "display": "Subcutaneous mastectomy of right breast with prosthetic implant (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1134"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.117.1.7.1.292",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.117.1.7.1.292"
+      } ],
+      "version": "20210220",
+      "name": "EmergencyDepartmentVisit",
+      "title": "Emergency Department Visit",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:05-06:00",
+        "contains": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "4525004",
+          "display": "Emergency department patient visit (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.117.1.7.1.292"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113762.1.4.1111.143",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113762.1.4.1111.143"
+      } ],
+      "version": "20210220",
+      "name": "ObservationServices",
+      "title": "Observation Services",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "448951000124107",
+          "display": "Admission to observation unit (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113762.1.4.1111.143"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Measure",
+      "id": "BreastCancerScreeningsFHIR",
+      "meta": {
+        "versionId": "2",
+        "lastUpdated": "2021-04-26T11:24:08.000-06:00",
+        "source": "#cn7WFg8wl2QWx7cU",
+        "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm" ]
+      },
+      "language": "en",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+        "valueCode": "boolean"
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+        "valueReference": {
+          "reference": "Device/cqf-tooling"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "Measurement Period",
+          "use": "in",
+          "min": 0,
+          "max": "1",
+          "type": "Period"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "SDE Sex",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "type": "Coding"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "Numerator",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "type": "boolean"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "Denominator",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "type": "boolean"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "SDE Payer",
+          "use": "out",
+          "min": 0,
+          "max": "*",
+          "type": "Any"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "Initial Population",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "type": "boolean"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "SDE Ethnicity",
+          "use": "out",
+          "min": 0,
+          "max": "*",
+          "type": "Coding"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-parameter",
+        "valueParameterDefinition": {
+          "name": "SDE Race",
+          "use": "out",
+          "min": 0,
+          "max": "*",
+          "type": "Coding"
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-dataRequirement",
+        "valueDataRequirement": {
+          "type": "Observation",
+          "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
+          "mustSupport": [ "effective", "code", "status" ]
+        }
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "SupplementalDataElementsFHIR4"
+        }, {
+          "url": "name",
+          "valueString": "SDE Sex"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Sex\":\n  case\n    when Patient.gender = 'male' then Code { code: 'M', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Male' }\n    when Patient.gender = 'female' then Code { code: 'F', system: 'http://hl7.org/fhir/v3/AdministrativeGender', display: 'Female' }\n    else null\n  end"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 0
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "SDE Sex"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Sex\":\n  SDE.\"SDE Sex\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 1
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "QICoreElements"
+        }, {
+          "url": "name",
+          "valueString": "Observation"
+        }, {
+          "url": "statement",
+          "valueString": "// @profile: http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationdefine Observation:\n  [Observation] O\n    where O.status in { 'final', 'amended', 'corrected' }"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 2
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "Numerator"
+        }, {
+          "url": "statement",
+          "valueString": "define \"Numerator\":\n  exists (\n    QICore.Observation Observation\n      where Observation.code in \"Mammography\"\n        and Observation.effective.toInterval() ends 27 months or less on or before end of \"Measurement Period\"\n  )"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 3
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "QICoreElements"
+        }, {
+          "url": "name",
+          "valueString": "Encounter"
+        }, {
+          "url": "statement",
+          "valueString": "// @profile: http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounterdefine Encounter:\n  [Encounter]"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 4
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "QICoreElements"
+        }, {
+          "url": "name",
+          "valueString": "EncounterPerformed"
+        }, {
+          "url": "statement",
+          "valueString": "define EncounterPerformed:\n  Encounter E\n    where E.status = 'finished'"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 5
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "AdultOutpatientEncountersFHIR4"
+        }, {
+          "url": "name",
+          "valueString": "Qualifying Encounters"
+        }, {
+          "url": "statement",
+          "valueString": "define \"Qualifying Encounters\":\n  QICore.EncounterPerformed E\n    where (E.type in \"Office Visit\"\n        or E.type in \"Annual Wellness Visit\"\n        or E.type in \"Preventive Care Services - Established Office Visit, 18 and Up\"\n        or E.type in \"Preventive Care Services-Initial Office Visit, 18 and Up\"\n        or E.type in \"Home Healthcare Services\"\n      )\n      and E.period.toInterval() during \"Measurement Period\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 6
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "Telehealth Services"
+        }, {
+          "url": "statement",
+          "valueString": "define \"Telehealth Services\":\n  QICore.EncounterPerformed Encounter\n    where (Encounter.type in \"Online Assessments\" or Encounter.type in \"Telephone Visits\")\n      and Encounter.period.toInterval() during \"Measurement Period\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 7
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "Initial Population"
+        }, {
+          "url": "statement",
+          "valueString": "define \"Initial Population\":\n  AgeInYearsAt(date from start of \"Measurement Period\") in Interval[51, 74)\n    and Patient.gender = 'female'\n    and exists ( AdultOutpatientEncounters.\"Qualifying Encounters\"\n      union \"Telehealth Services\"\n    )"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 8
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "Denominator"
+        }, {
+          "url": "statement",
+          "valueString": "define \"Denominator\":\n  \"Initial Population\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 9
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "QICoreElements"
+        }, {
+          "url": "name",
+          "valueString": "Coverage"
+        }, {
+          "url": "statement",
+          "valueString": "/* Elements */\n\n// @profile: http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coveragedefine Coverage:\n  [Coverage]"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 10
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "SupplementalDataElementsFHIR4"
+        }, {
+          "url": "name",
+          "valueString": "SDE Payer"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Payer\":\n  QICore.Coverage Coverage\n    where Coverage.type in \"Payer\"\n      return {\n        code: Coverage.type,\n        period: Coverage.period\n      }"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 11
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "SDE Payer"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Payer\":\n  SDE.\"SDE Payer\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 12
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "SupplementalDataElementsFHIR4"
+        }, {
+          "url": "name",
+          "valueString": "SDE Ethnicity"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Ethnicity\":\n  { Patient.ethnicity().ombCategory }\n    union Patient.ethnicity().detailed"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 13
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "SDE Ethnicity"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 14
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "SupplementalDataElementsFHIR4"
+        }, {
+          "url": "name",
+          "valueString": "SDE Race"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Race\":\n  Patient.race().ombCategory\n    union Patient.race().detailed"
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 15
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-logicDefinition",
+        "extension": [ {
+          "url": "libraryName",
+          "valueString": "BreastCancerScreeningsFHIR"
+        }, {
+          "url": "name",
+          "valueString": "SDE Race"
+        }, {
+          "url": "statement",
+          "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
+        }, {
+          "url": "displaySequence",
+          "valueInteger": 16
+        } ]
+      } ],
+      "url": "http://ecqi.healthit.gov/ecqms/Measure/BreastCancerScreeningsFHIR",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://hl7.org/fhir/cqi/ecqm/Measure/Identifier/guid",
+        "value": "11874732-397f-4f8c-bc39-67ccf3fae750"
+      }, {
+        "use": "official",
+        "system": "http://hl7.org/fhir/cqi/ecqm/Measure/Identifier/cms",
+        "value": "125FHIR"
+      } ],
+      "version": "0.0.002",
+      "name": "BreastCancerScreeningsFHIR",
+      "title": "Breast Cancer ScreeningFHIR",
+      "status": "draft",
+      "experimental": false,
+      "date": "2021-10-21T19:53:03-06:00",
+      "publisher": "National Committee for Quality Assurance",
+      "contact": [ {
+        "telecom": [ {
+          "system": "url",
+          "value": "https://cms.gov"
+        } ]
+      } ],
+      "description": "Percentage of women 50-74 years of age who had a mammogram to screen for breast cancer in the 27 months prior to the end of the Measurement Period",
+      "purpose": "Unknown",
+      "copyright": "This Physician Performance Measure (Measure) and related data specifications are owned and were developed by the National Committee for Quality Assurance (NCQA). NCQA is not responsible for any use of the Measure. NCQA makes no representations, warranties, or endorsement about the quality of any organization or physician that uses or reports performance measures and NCQA has no liability to anyone who relies on such measures or specifications. NCQA holds a copyright in the Measure. The Measure can be reproduced and distributed, without modification, for noncommercial purposes (e.g., use by healthcare providers in connection with their practices) without obtaining approval from NCQA. Commercial use is defined as the sale, licensing, or distribution of the Measure for commercial gain, or incorporation of the Measure into a product or service that is sold, licensed or distributed for commercial gain. All commercial uses or requests for modification must be approved by NCQA and are subject to a license at the discretion of NCQA. (C) 2012-2020 National Committee for Quality Assurance. All Rights Reserved. \n\nLimited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets. NCQA disclaims all liability for use or accuracy of any third party codes contained in the specifications.\n\nCPT(R) contained in the Measure specifications is copyright 2004-2020 American Medical Association. LOINC(R) copyright 2004-2020 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2020 International Health Terminology Standards Development Organisation. ICD-10 copyright 2020 World Health Organization. All Rights Reserved.",
+      "effectivePeriod": {
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "relatedArtifact": [ {
+        "type": "depends-on",
+        "display": "Library SDE",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/SupplementalDataElementsFHIR4|2.0.000"
+      }, {
+        "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/FHIRHelpers|4.0.1"
+      }, {
+        "type": "depends-on",
+        "display": "Library QICore",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/QICoreElements|4.1.0"
+      }, {
+        "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/FHIRHelpers|4.0.1"
+      }, {
+        "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/FHIRHelpers|4.0.1"
+      }, {
+        "type": "depends-on",
+        "display": "Library Global",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/CQMCommon|0.1.0"
+      }, {
+        "type": "depends-on",
+        "display": "Library FC",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/FHIRCommon|4.0.1"
+      }, {
+        "type": "depends-on",
+        "display": "Library FHIRHelpers",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/FHIRHelpers|4.0.1"
+      }, {
+        "type": "depends-on",
+        "display": "Library AdultOutpatientEncounters",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/AdultOutpatientEncountersFHIR4|2.2.000"
+      }, {
+        "type": "depends-on",
+        "display": "Library QICore",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/QICoreElements|4.1.0"
+      }, {
+        "type": "depends-on",
+        "display": "Library Global",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/CQMCommon|0.1.0"
+      }, {
+        "type": "depends-on",
+        "display": "Library QICore",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/QICoreElements|4.1.0"
+      }, {
+        "type": "depends-on",
+        "display": "Library USCore",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/USCoreElements|3.1.1"
+      }, {
+        "type": "depends-on",
+        "display": "Library FC",
+        "resource": "http://ecqi.healthit.gov/ecqms/Library/FHIRCommon|4.0.1"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Mammography",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.108.12.1018"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Office Visit",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Annual Wellness Visit",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Preventive Care Services - Established Office Visit, 18 and Up",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Preventive Care Services-Initial Office Visit, 18 and Up",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Home Healthcare Services",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Online Assessments",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Telephone Visits",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080"
+      }, {
+        "type": "depends-on",
+        "display": "Value set Payer",
+        "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ],
+      "library": [ "http://ecqi.healthit.gov/ecqms/Library/BreastCancerScreeningsFHIR" ],
+      "disclaimer": "The performance Measure is not a clinical guideline and does not establish a standard of medical care, and has not been tested for all potential applications. THE MEASURE AND SPECIFICATIONS ARE PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND.\n \nDue to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].",
+      "scoring": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code": "proportion",
+          "display": "Proportion"
+        } ]
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "process"
+        } ]
+      } ],
+      "rationale": "Breast cancer is one of the most common types of cancers, accounting for 15 percent of all new cancer diagnoses in the U.S. (Noone et al, 2018). In 2015, over 3 million women were estimated to be living with breast cancer in the U.S. and it is estimated that 12 percent of women will be diagnosed with breast cancer at some point during their lifetime (Noone et al, 2018). \n\nWhile there are other factors that affect a woman's risk of developing breast cancer, advancing age is a primary risk factor. Breast cancer is most frequently diagnosed among women ages 55-64; the median age at diagnosis is 62 years (Noone et al, 2018).\n\nThe chance of a woman being diagnosed with breast cancer in a given year increases with age. By age 40, the chances are 1 in 68; by age 50 it becomes 1 in 43; by age 60, it is 1 in 29 (American Cancer Society, 2017).",
+      "clinicalRecommendationStatement": "The U.S. Preventive Services Task Force (USPSTF) recommends biennial screening mammography for women aged 50-74 years (B recommendation). (USPSTF, 2016)\n\nThe decision to start screening mammography in women prior to age 50 years should be an individual one. Women who place a higher value on the potential benefit than the potential harms may choose to begin biennial screening between the ages of 40 and 49 years (C recommendation). (USPSTF, 2016) \n\nThe USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of screening mammography in women aged 75 years or older (I statement). (USPSTF, 2016) \n\nThe USPSTF concludes that the current evidence is insufficient to assess the benefits and harms of digital breast tomosynthesis (DBT) as a primary screening method for breast cancer (I Statement). (USPSTF, 2016) \n\nThe USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of adjunctive screening for breast cancer using breast ultrasonography, magnetic resonance imaging, DBT, or other methods in women identified to have dense breasts on an otherwise negative screening mammogram (I statement). (USPSTF, 2016)",
+      "improvementNotation": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code": "increase"
+        } ]
+      },
+      "guidance": "Patient self-report for procedures as well as diagnostic studies should be recorded in 'Procedure, Performed' template or 'Diagnostic Study, Performed' template in QRDA-1. \n\nThis measure evaluates primary screening. Do not count biopsies, breast ultrasounds, or MRIs because they are not appropriate methods for primary breast cancer screening.\n\nThis eCQM is a patient-based measure.\n \nThis version of the eCQM uses QDM version 5.5. Please refer to the eCQI resource center (https://ecqi.healthit.gov/qdm) for more information on the QDM.",
+      "group": [ {
+        "population": [ {
+          "id": "59495760-F805-422E-BA85-243861A8EC6D",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "initial-population",
+              "display": "Initial Population"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Initial Population"
+          }
+        }, {
+          "id": "03E48A41-2303-4AD9-8869-F7916CADEEBA",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "denominator",
+              "display": "Denominator"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Denominator"
+          }
+        }, {
+          "id": "AAB6C994-F578-43A9-807F-4E2C1F41A0C5",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "denominator-exclusion",
+              "display": "Denominator Exclusion"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Denominator Exclusions"
+          }
+        }, {
+          "id": "D4FEA771-F317-48EA-90AB-4B0BEDAA32DC",
+          "code": {
+            "coding": [ {
+              "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+              "code": "numerator",
+              "display": "Numerator"
+            } ]
+          },
+          "criteria": {
+            "language": "text/cql.identifier",
+            "expression": "Numerator"
+          }
+        } ]
+      } ],
+      "supplementalData": [ {
+        "id": "B6107A12-4D72-4F7C-B4E8-BA9FC0BE6E9B",
+        "usage": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+            "code": "supplemental-data"
+          } ]
+        } ],
+        "criteria": {
+          "language": "text/cql.identifier",
+          "expression": "SDE Ethnicity"
+        }
+      }, {
+        "id": "BA036613-3575-46B4-83ED-AAC19098EB79",
+        "usage": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+            "code": "supplemental-data"
+          } ]
+        } ],
+        "criteria": {
+          "language": "text/cql.identifier",
+          "expression": "SDE Payer"
+        }
+      }, {
+        "id": "38B58267-B0FA-48C6-BAD6-BEB44FDC456F",
+        "usage": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+            "code": "supplemental-data"
+          } ]
+        } ],
+        "criteria": {
+          "language": "text/cql.identifier",
+          "expression": "SDE Race"
+        }
+      }, {
+        "id": "C91AAEAC-CFE8-49E8-A9A4-C486B886FCE8",
+        "usage": [ {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+            "code": "supplemental-data"
+          } ]
+        } ],
+        "criteria": {
+          "language": "text/cql.identifier",
+          "expression": "SDE Sex"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Measure/BreastCancerScreeningsFHIR/_history/2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "numer-EXM125",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2028-9",
+            "display": "Asian"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          } ]
+        },
+        "system": "http://hospital.smarthealthit.org",
+        "value": "999999995"
+      } ],
+      "name": [ {
+        "family": "McCarren",
+        "given": [ "Karen" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1966-01-01"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/numer-EXM125"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Library",
+      "id": "library-BreastCancerScreeningsFHIR",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
+        "valueReference": {
+          "reference": "Device/cqf-tooling"
+        }
+      } ],
+      "url": "http://ecqi.healthit.gov/ecqms/Library/BreastCancerScreeningsFHIR",
+      "version": "0.0.009",
+      "name": "BreastCancerScreeningsFHIR",
+      "content": [ {
+        "contentType": "text/cql",
+        "data": "bGlicmFyeSBCcmVhc3RDYW5jZXJTY3JlZW5pbmdzRkhJUiB2ZXJzaW9uICcwLjAuMDA5Jw0KDQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJw0KDQppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJyBjYWxsZWQgRkhJUkhlbHBlcnMNCmluY2x1ZGUgRkhJUkNvbW1vbiB2ZXJzaW9uICc0LjAuMScgY2FsbGVkIEZDDQppbmNsdWRlIENRTUNvbW1vbiB2ZXJzaW9uICcwLjEuMCcgY2FsbGVkIEdsb2JhbA0KaW5jbHVkZSBRSUNvcmVFbGVtZW50cyB2ZXJzaW9uICc0LjEuMCcgY2FsbGVkIFFJQ29yZQ0KaW5jbHVkZSBTdXBwbGVtZW50YWxEYXRhRWxlbWVudHNGSElSNCB2ZXJzaW9uICcyLjAuMDAwJyBjYWxsZWQgU0RFDQppbmNsdWRlIEFkdWx0T3V0cGF0aWVudEVuY291bnRlcnNGSElSNCB2ZXJzaW9uICcyLjIuMDAwJyBjYWxsZWQgQWR1bHRPdXRwYXRpZW50RW5jb3VudGVycw0KLy9pbmNsdWRlIEFkdmFuY2VkSWxsbmVzc2FuZEZyYWlsdHlFeGNsdXNpb25FQ1FNRkhJUjQgdmVyc2lvbiAnNS4xNy4wMDAnIGNhbGxlZCBGcmFpbHR5TFRJDQovL2luY2x1ZGUgUGFsbGlhdGl2ZUNhcmVGSElSIHZlcnNpb24gJzAuNi4wMDAnIGNhbGxlZCBQYWxsaWF0aXZlQ2FyZQ0KLy9pbmNsdWRlIEN1bXVsYXRpdmVNZWRpY2F0aW9uRHVyYXRpb25GSElSNCB2ZXJzaW9uICcxLjAuMDAwJyBjYWxsZWQgQ01EDQovL2luY2x1ZGUgSG9zcGljZUZISVI0IHZlcnNpb24gJzIuMy4wMDAnIGNhbGxlZCBIb3NwaWNlDQoNCnZhbHVlc2V0ICJCaWxhdGVyYWwgTWFzdGVjdG9teSI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy40NjQuMTAwMy4xOTguMTIuMTAwNScNCnZhbHVlc2V0ICJIaXN0b3J5IG9mIGJpbGF0ZXJhbCBtYXN0ZWN0b215IjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjE5OC4xMi4xMDY4Jw0KdmFsdWVzZXQgIkxlZnQiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTIyLjEyLjEwMzYnDQp2YWx1ZXNldCAiTWFtbW9ncmFwaHkiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTA4LjEyLjEwMTgnDQp2YWx1ZXNldCAiT25saW5lIEFzc2Vzc21lbnRzIjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjEwMS4xMi4xMDg5Jw0KdmFsdWVzZXQgIlJpZ2h0IjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjEyMi4xMi4xMDM1Jw0KdmFsdWVzZXQgIlN0YXR1cyBQb3N0IExlZnQgTWFzdGVjdG9teSI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy40NjQuMTAwMy4xOTguMTIuMTA2OScNCnZhbHVlc2V0ICJTdGF0dXMgUG9zdCBSaWdodCBNYXN0ZWN0b215IjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjE5OC4xMi4xMDcwJw0KdmFsdWVzZXQgIlRlbGVwaG9uZSBWaXNpdHMiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTAxLjEyLjEwODAnDQp2YWx1ZXNldCAiVW5pbGF0ZXJhbCBNYXN0ZWN0b215IExlZnQiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTk4LjEyLjExMzMnDQp2YWx1ZXNldCAiVW5pbGF0ZXJhbCBNYXN0ZWN0b215IFJpZ2h0IjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjE5OC4xMi4xMTM0Jw0KdmFsdWVzZXQgIlVuaWxhdGVyYWwgTWFzdGVjdG9teSwgVW5zcGVjaWZpZWQgTGF0ZXJhbGl0eSI6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy40NjQuMTAwMy4xOTguMTIuMTA3MScNCg0KcGFyYW1ldGVyICJNZWFzdXJlbWVudCBQZXJpb2QiIEludGVydmFsPERhdGVUaW1lPg0KICBkZWZhdWx0IEludGVydmFsW0AyMDIwLTAxLTAxVDAwOjAwOjAwLjAsIEAyMDIxLTAxLTAxVDAwOjAwOjAwLjApDQoNCmNvbnRleHQgUGF0aWVudA0KDQpkZWZpbmUgIlNERSBFdGhuaWNpdHkiOg0KICBTREUuIlNERSBFdGhuaWNpdHkiDQoNCmRlZmluZSAiU0RFIFBheWVyIjoNCiAgU0RFLiJTREUgUGF5ZXIiDQoNCmRlZmluZSAiU0RFIFJhY2UiOg0KICBTREUuIlNERSBSYWNlIg0KDQpkZWZpbmUgIlNERSBTZXgiOg0KICBTREUuIlNERSBTZXgiDQoNCmRlZmluZSAiRGVub21pbmF0b3IiOg0KICAiSW5pdGlhbCBQb3B1bGF0aW9uIg0KDQovLyBOT1RFOiBTaG91bGRuJ3QgdGhpcyBiZSBjaGVja2luZyBmb3IgY2xpbmljYWxTdGF0dXMgYXQgbGVhc3QsIGlmIG5vdCBhbHNvIHZlcmlmaWNhdGlvbiBzdGF0dXM/DQpkZWZpbmUgIlJpZ2h0IE1hc3RlY3RvbXkgRGlhZ25vc2lzIjoNCiAgKChRSUNvcmUuQ29uZGl0aW9uIENvbmRpdGlvbg0KICAgICAgd2hlcmUgQ29uZGl0aW9uLmNvZGUgaW4gIlN0YXR1cyBQb3N0IFJpZ2h0IE1hc3RlY3RvbXkiDQogICAgKQ0KICAgICAgdW5pb24gKFFJQ29yZS5Db25kaXRpb24gQ29uZGl0aW9uDQogICAgICAgICAgd2hlcmUgQ29uZGl0aW9uLmNvZGUgaW4gIlVuaWxhdGVyYWwgTWFzdGVjdG9teSwgVW5zcGVjaWZpZWQgTGF0ZXJhbGl0eSINCiAgICAgICAgICAgIGFuZCBDb25kaXRpb24uYm9keVNpdGUgaW4gIlJpZ2h0Ig0KICAgICAgKQ0KICApIFJpZ2h0TWFzdGVjdG9teQ0KICAgIHdoZXJlIFJpZ2h0TWFzdGVjdG9teS5wcmV2YWxlbmNlSW50ZXJ2YWwoKSBzdGFydHMgb24gb3IgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KDQpkZWZpbmUgIlJpZ2h0IE1hc3RlY3RvbXkgUHJvY2VkdXJlIjoNCiAgUUlDb3JlLlByb2NlZHVyZVBlcmZvcm1lZCBQcm9jZWR1cmUNCiAgICB3aGVyZSBQcm9jZWR1cmUuY29kZSBpbiAiVW5pbGF0ZXJhbCBNYXN0ZWN0b215IFJpZ2h0Ig0KICAgICAgYW5kIFByb2NlZHVyZS5wZXJmb3JtZWQudG9JbnRlcnZhbCgpIGVuZHMgb24gb3IgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KDQpkZWZpbmUgIkxlZnQgTWFzdGVjdG9teSBQcm9jZWR1cmUiOg0KICBRSUNvcmUuUHJvY2VkdXJlUGVyZm9ybWVkIFByb2NlZHVyZQ0KICAgIHdoZXJlIFByb2NlZHVyZS5jb2RlIGluICJVbmlsYXRlcmFsIE1hc3RlY3RvbXkgTGVmdCINCiAgICAgIGFuZCBQcm9jZWR1cmUucGVyZm9ybWVkLnRvSW50ZXJ2YWwoKSBlbmRzIG9uIG9yIGJlZm9yZSBlbmQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCINCg0KZGVmaW5lICJOdW1lcmF0b3IiOg0KICBleGlzdHMgKA0KICAgIFFJQ29yZS5PYnNlcnZhdGlvbiBPYnNlcnZhdGlvbg0KICAgICAgd2hlcmUgT2JzZXJ2YXRpb24uY29kZSBpbiAiTWFtbW9ncmFwaHkiDQogICAgICAgIGFuZCBPYnNlcnZhdGlvbi5lZmZlY3RpdmUudG9JbnRlcnZhbCgpIGVuZHMgMjcgbW9udGhzIG9yIGxlc3Mgb24gb3IgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KICApDQoNCmRlZmluZSAiVGVsZWhlYWx0aCBTZXJ2aWNlcyI6DQogIFFJQ29yZS5FbmNvdW50ZXJQZXJmb3JtZWQgRW5jb3VudGVyDQogICAgd2hlcmUgKEVuY291bnRlci50eXBlIGluICJPbmxpbmUgQXNzZXNzbWVudHMiIG9yIEVuY291bnRlci50eXBlIGluICJUZWxlcGhvbmUgVmlzaXRzIikNCiAgICAgIGFuZCBFbmNvdW50ZXIucGVyaW9kLnRvSW50ZXJ2YWwoKSBkdXJpbmcgIk1lYXN1cmVtZW50IFBlcmlvZCINCg0KZGVmaW5lICJCaWxhdGVyYWwgTWFzdGVjdG9teSBQcm9jZWR1cmUiOg0KICBRSUNvcmUuUHJvY2VkdXJlUGVyZm9ybWVkIFByb2NlZHVyZQ0KICAgIHdoZXJlIFByb2NlZHVyZS5jb2RlIGluICJCaWxhdGVyYWwgTWFzdGVjdG9teSINCiAgICAgIGFuZCBQcm9jZWR1cmUucGVyZm9ybWVkLnRvSW50ZXJ2YWwoKSBlbmRzIG9uIG9yIGJlZm9yZSBlbmQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCINCg0KZGVmaW5lICJCaWxhdGVyYWwgTWFzdGVjdG9teSBEaWFnbm9zaXMiOg0KICBRSUNvcmUuQ29uZGl0aW9uIENvbmRpdGlvbg0KICAgIHdoZXJlIENvbmRpdGlvbi5jb2RlIGluICJIaXN0b3J5IG9mIGJpbGF0ZXJhbCBtYXN0ZWN0b215Ig0KICAgICAgYW5kIENvbmRpdGlvbi5wcmV2YWxlbmNlSW50ZXJ2YWwoKSBzdGFydHMgb24gb3IgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KDQpkZWZpbmUgIkxlZnQgTWFzdGVjdG9teSBEaWFnbm9zaXMiOg0KICAoKFFJQ29yZS5Db25kaXRpb24gQ29uZGl0aW9uDQogICAgd2hlcmUgQ29uZGl0aW9uLmNvZGUgaW4gIlN0YXR1cyBQb3N0IExlZnQgTWFzdGVjdG9teSINCiAgKQ0KICAgIHVuaW9uIChRSUNvcmUuQ29uZGl0aW9uIENvbmRpdGlvbg0KICAgICAgd2hlcmUgQ29uZGl0aW9uLmNvZGUgaW4gIlVuaWxhdGVyYWwgTWFzdGVjdG9teSwgVW5zcGVjaWZpZWQgTGF0ZXJhbGl0eSINCiAgICAgICAgYW5kIENvbmRpdGlvbi5ib2R5U2l0ZSBpbiAiTGVmdCINCiAgICApDQogICkgTGVmdE1hc3RlY3RvbXkNCiAgICB3aGVyZSBMZWZ0TWFzdGVjdG9teS5wcmV2YWxlbmNlSW50ZXJ2YWwoKSBzdGFydHMgb24gb3IgYmVmb3JlIGVuZCBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIg0KDQpkZWZpbmUgIkluaXRpYWwgUG9wdWxhdGlvbiI6DQogIEFnZUluWWVhcnNBdChkYXRlIGZyb20gc3RhcnQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCIpIGluIEludGVydmFsWzUxLCA3NCkNCiAgICBhbmQgUGF0aWVudC5nZW5kZXIgPSAnZmVtYWxlJw0KICAgIGFuZCBleGlzdHMgKCBBZHVsdE91dHBhdGllbnRFbmNvdW50ZXJzLiJRdWFsaWZ5aW5nIEVuY291bnRlcnMiDQogICAgICB1bmlvbiAiVGVsZWhlYWx0aCBTZXJ2aWNlcyINCiAgICApDQoNCi8qIFRPRE86DQpkZWZpbmUgIkRlbm9taW5hdG9yIEV4Y2x1c2lvbnMiOg0KICAoIEhvc3BpY2UuIkhhcyBIb3NwaWNlIg0KICAgIG9yICggKCBleGlzdHMgIlJpZ2h0IE1hc3RlY3RvbXkgRGlhZ25vc2lzIg0KICAgICAgICAgIG9yIGV4aXN0cyAiUmlnaHQgTWFzdGVjdG9teSBQcm9jZWR1cmUiDQogICAgICApDQogICAgICAgIGFuZCAoIGV4aXN0cyAiTGVmdCBNYXN0ZWN0b215IERpYWdub3NpcyINCiAgICAgICAgICAgIG9yIGV4aXN0cyAiTGVmdCBNYXN0ZWN0b215IFByb2NlZHVyZSINCiAgICAgICAgKQ0KICAgICkNCiAgICBvciBleGlzdHMgIkJpbGF0ZXJhbCBNYXN0ZWN0b215IERpYWdub3NpcyINCiAgICBvciBleGlzdHMgIkJpbGF0ZXJhbCBNYXN0ZWN0b215IFByb2NlZHVyZSINCiAgICBvciAoIEZyYWlsdHlMVEkuIkFkdmFuY2VkIElsbG5lc3MgYW5kIEZyYWlsdHkgRXhjbHVzaW9uIE5vdCBJbmNsdWRpbmcgT3ZlciBBZ2UgODAiICkNCiAgICBvciAoIEFnZUluWWVhcnNBdChkYXRlIGZyb20gc3RhcnQgb2YgIk1lYXN1cmVtZW50IFBlcmlvZCIpPj0gNjUNCiAgICAgICAgYW5kIEZyYWlsdHlMVEkuIkhhcyBMb25nIFRlcm0gQ2FyZSBQZXJpb2RzIExvbmdlciBUaGFuIDkwIENvbnNlY3V0aXZlIERheXMiDQogICAgKQ0KICAgIG9yIFBhbGxpYXRpdmVDYXJlLiJQYWxsaWF0aXZlIENhcmUgaW4gdGhlIE1lYXN1cmVtZW50IFBlcmlvZCINCiAgKQ0KKi8NCg=="
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Library/library-BreastCancerScreeningsFHIR"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.122.12.1036",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "shareable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "narrative"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "publishable"
+      }, {
+        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+        "valueString": "Includes only relevant concepts associated with the left side of the body. This is a grouping of SNOMED CT codes."
+      }, {
+        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+        "valueString": "Excludes concepts representing the right side of the body."
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+        "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+      } ],
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.122.12.1036",
+      "version": "20171216",
+      "name": "Left",
+      "title": "Left",
+      "status": "active",
+      "experimental": false,
+      "publisher": "National Committee for Quality Assurance",
+      "description": "This value set contains concepts that represent the left side of the body.",
+      "purpose": "This value set may use the Quality Data Model (QDM) attribute related to Anatomical Location Site.",
+      "expansion": {
+        "timestamp": "2021-01-15T10:30:17-07:00",
+        "contains": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "7771000",
+          "display": "Left (qualifier value)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.122.12.1036"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.122.12.1035",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "shareable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "narrative"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "publishable"
+      }, {
+        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+        "valueString": "Includes only relevant concepts associated with the right side of the body. This is a grouping of SNOMED CT codes."
+      }, {
+        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+        "valueString": "Excludes concepts representing the left side of the body."
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+        "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+      } ],
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.122.12.1035",
+      "version": "20171216",
+      "name": "Right",
+      "title": "Right",
+      "status": "active",
+      "experimental": false,
+      "publisher": "National Committee for Quality Assurance",
+      "description": "This value set contains concepts that represent the right side of the body.",
+      "purpose": "This value set may use the Quality Data Model (QDM) attribute related to Anatomical Location Site.",
+      "expansion": {
+        "timestamp": "2021-01-15T10:30:17-07:00",
+        "contains": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "24028007",
+          "display": "Right (qualifier value)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.122.12.1035"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.101.12.1089",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.101.12.1089"
+      } ],
+      "version": "20210224",
+      "name": "OnlineAssessments",
+      "title": "Online Assessments",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2019",
+          "code": "98969",
+          "display": "Online assessment and management service provided by a qualified nonphysician health care professional to an established patient or guardian, not originating from a related assessment and management service provided within the previous 7 days, using the Internet or similar electronic communications network"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "98970",
+          "display": "Qualified nonphysician health care professional online digital assessment and management, for an established patient, for up to 7 days, cumulative time during the 7 days; 5-10 minutes"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "98971",
+          "display": "Qualified nonphysician health care professional online digital assessment and management, for an established patient, for up to 7 days, cumulative time during the 7 days; 11-20 minutes"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "98972",
+          "display": "Qualified nonphysician health care professional online digital assessment and management, for an established patient, for up to 7 days, cumulative time during the 7 days; 21 or more minutes"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99421",
+          "display": "Online digital evaluation and management service, for an established patient, for up to 7 days, cumulative time during the 7 days; 5-10 minutes"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99422",
+          "display": "Online digital evaluation and management service, for an established patient, for up to 7 days, cumulative time during the 7 days; 11-20 minutes"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99423",
+          "display": "Online digital evaluation and management service, for an established patient, for up to 7 days, cumulative time during the 7 days; 21 or more minutes"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99458",
+          "display": "Remote physiologic monitoring treatment management services, clinical staff/physician/other qualified health care professional time in a calendar month requiring interactive communication with the patient/caregiver during the month; each additional 20 minutes (List separately in addition to code for primary procedure)"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G0071",
+          "display": "Payment for communication technology-based services for 5 minutes or more of a virtual (non-face-to-face) communication between an rural health clinic (rhc) or federally qualified health center (fqhc) practitioner and rhc or fqhc patient, or 5 minutes or more of remote evaluation of recorded video and/or images by an rhc or fqhc practitioner, occurring in lieu of an office visit; rhc or fqhc only"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G2010",
+          "display": "Remote evaluation of recorded video and/or images submitted by an established patient (e.g., store and forward), including interpretation with follow-up with the patient within 24 business hours, not originating from a related e/m service provided within the previous 7 days nor leading to an e/m service or procedure within the next 24 hours or soonest available appointment"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G2012",
+          "display": "Brief communication technology-based service, e.g. virtual check-in, by a physician or other qualified health care professional who can report evaluation and management services, provided to an established patient, not originating from a related e/m service provided within the previous 7 days nor leading to an e/m service or procedure within the next 24 hours or soonest available appointment; 5-10 minutes of medical discussion"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G2061",
+          "display": "Qualified nonphysician healthcare professional online assessment and management service, for an established patient, for up to seven days, cumulative time during the 7 days; 5-10 minutes"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G2062",
+          "display": "Qualified nonphysician healthcare professional online assessment and management service, for an established patient, for up to seven days, cumulative time during the 7 days; 11-20 minutes"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G2063",
+          "display": "Qualified nonphysician healthcare professional online assessment and management service, for an established patient, for up to seven days, cumulative time during the 7 days; 21 or more minutes"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.101.12.1001",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.101.12.1001"
+      } ],
+      "version": "20180310",
+      "name": "OfficeVisit",
+      "title": "Office Visit",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2020",
+          "code": "99201",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires these 3 key components: A problem focused history; A problem focused examination; Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are self limited or minor. Typically, 10 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99202",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 15-29 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99203",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 30-44 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99204",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using time for code selection, 45-59 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99205",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 60-74 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99212",
+          "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and straightforward medical decision making. When using time for code selection, 10-19 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99213",
+          "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and low level of medical decision making. When using time for code selection, 20-29 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99214",
+          "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and moderate level of medical decision making. When using time for code selection, 30-39 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99215",
+          "display": "Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter."
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2018-03",
+          "code": "30346009",
+          "display": "Evaluation and management of established outpatient in office or other outpatient facility (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2018-03",
+          "code": "37894004",
+          "display": "Evaluation and management of new outpatient in office or other outpatient facility (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185463005",
+          "display": "Visit out of hours (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185464004",
+          "display": "Out of hours visit - not night visit (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185465003",
+          "display": "Weekend visit (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "3391000175108",
+          "display": "Office visit for pediatric care and assessment (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "439740005",
+          "display": "Postoperative follow-up visit (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.101.12.1023",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.101.12.1023"
+      } ],
+      "version": "20170504",
+      "name": "PreventiveCareServices-InitialOfficeVisit,18andUp",
+      "title": "Preventive Care Services-Initial Office Visit, 18 and Up",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99385",
+          "display": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, new patient; 18-39 years"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99386",
+          "display": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, new patient; 40-64 years"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99387",
+          "display": "Initial comprehensive preventive medicine evaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, new patient; 65 years and older"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113762.1.4.1",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113762.1.4.1"
+      } ],
+      "version": "20150331",
+      "name": "ONCAdministrativeSex",
+      "title": "ONC Administrative Sex",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+          "version": "HL7V3.0_2020-11",
+          "code": "F",
+          "display": "Female"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender",
+          "version": "HL7V3.0_2020-11",
+          "code": "M",
+          "display": "Male"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113762.1.4.1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.101.12.1025",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.101.12.1025"
+      } ],
+      "version": "20170504",
+      "name": "PreventiveCareServices-EstablishedOfficeVisit,18andUp",
+      "title": "Preventive Care Services - Established Office Visit, 18 and Up",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99395",
+          "display": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, established patient; 18-39 years"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99396",
+          "display": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, established patient; 40-64 years"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99397",
+          "display": "Periodic comprehensive preventive medicine reevaluation and management of an individual including an age and gender appropriate history, examination, counseling/anticipatory guidance/risk factor reduction interventions, and the ordering of laboratory/diagnostic procedures, established patient; 65 years and older"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "active-condition",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "shareable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "computable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "publishable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "structured"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+        "valueContactDetail": {
+          "name": "Bryn Rhodes"
+        }
+      } ],
+      "url": "http://fhir.org/guides/cqf/common/ValueSet/active-condition",
+      "version": "0.1.0",
+      "name": "CQFActiveCondition",
+      "title": "CQF Active Condition",
+      "status": "active",
+      "experimental": false,
+      "date": "2019-07-21",
+      "publisher": "Health Level 7 International - Clinical Decision Support WG",
+      "contact": [ {
+        "telecom": [ {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+        } ]
+      } ],
+      "description": "Active condition clinical status codes",
+      "purpose": "Used to specify the set of clinical status codes that are considered active",
+      "copyright": "© HL7 2016+.",
+      "compose": {
+        "include": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "concept": [ {
+            "code": "active",
+            "display": "Active"
+          }, {
+            "code": "recurrence",
+            "display": "Recurrence"
+          }, {
+            "code": "relapse",
+            "display": "Relapse"
+          } ]
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/active-condition"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1069",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1069",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1069"
+      } ],
+      "version": "20171216",
+      "name": "StatusPostLeftMastectomy",
+      "title": "Status Post Left Mastectomy",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "version": "2021",
+          "code": "Z90.12",
+          "display": "Acquired absence of left breast and nipple"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "137671000119105",
+          "display": "History of prophylactic mastectomy of left breast (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "429009003",
+          "display": "History of left mastectomy (situation)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1069"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.114222.4.11.837",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.114222.4.11.837"
+      } ],
+      "version": "20121025",
+      "name": "Ethnicity",
+      "title": "Ethnicity",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:05-06:00",
+        "contains": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2135-2",
+          "display": "Hispanic or Latino"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2186-5",
+          "display": "Not Hispanic or Latino"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.114222.4.11.837"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.114222.4.11.3591",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.114222.4.11.3591"
+      } ],
+      "version": "20180718",
+      "name": "Payer",
+      "title": "Payer",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "1",
+          "display": "MEDICARE"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "11",
+          "display": "Medicare Managed Care (Includes Medicare Advantage Plans)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "111",
+          "display": "Medicare HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "112",
+          "display": "Medicare PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "113",
+          "display": "Medicare POS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "119",
+          "display": "Medicare Managed Care Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "12",
+          "display": "Medicare (Non-managed Care)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "121",
+          "display": "Medicare FFS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "122",
+          "display": "Medicare Drug Benefit"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "123",
+          "display": "Medicare Medical Savings Account (MSA)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "129",
+          "display": "Medicare Non-managed Care Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "13",
+          "display": "Medicare Hospice"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "14",
+          "display": "Dual Eligibility Medicare/Medicaid Organization"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "19",
+          "display": "Medicare Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "191",
+          "display": "Medicare Pharmacy Benefit Manager"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "2",
+          "display": "MEDICAID"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "21",
+          "display": "Medicaid (Managed Care)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "211",
+          "display": "Medicaid HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "212",
+          "display": "Medicaid PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "213",
+          "display": "Medicaid PCCM (Primary Care Case Management)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "219",
+          "display": "Medicaid Managed Care Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "22",
+          "display": "Medicaid (Non-managed Care Plan)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "23",
+          "display": "Medicaid/SCHIP"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "25",
+          "display": "Medicaid - Out of State"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "26",
+          "display": "Medicaid - Long Term Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "29",
+          "display": "Medicaid Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "291",
+          "display": "Medicaid Pharmacy Benefit Manager"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "299",
+          "display": "Medicaid - Dental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3",
+          "display": "OTHER GOVERNMENT (Federal/State/Local) (excluding Department of Corrections)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "31",
+          "display": "Department of Defense"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "311",
+          "display": "TRICARE (CHAMPUS)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3111",
+          "display": "TRICARE Prime--HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3112",
+          "display": "TRICARE Extra--PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3113",
+          "display": "TRICARE Standard - Fee For Service"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3114",
+          "display": "TRICARE For Life--Medicare Supplement"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3115",
+          "display": "TRICARE Reserve Select"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3116",
+          "display": "Uniformed Services Family Health Plan (USFHP) -- HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3119",
+          "display": "Department of Defense - (other)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "312",
+          "display": "Military Treatment Facility"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3121",
+          "display": "Enrolled Prime--HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3122",
+          "display": "Non-enrolled Space Available"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3123",
+          "display": "TRICARE For Life (TFL)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "313",
+          "display": "Dental --Stand Alone"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32",
+          "display": "Department of Veterans Affairs"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "321",
+          "display": "Veteran care-Care provided to Veterans"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3211",
+          "display": "Direct Care-Care provided in VA facilities"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3212",
+          "display": "Indirect Care-Care provided outside VA facilities"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32121",
+          "display": "Fee Basis"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32122",
+          "display": "Foreign Fee/Foreign Medical Program (FMP)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32123",
+          "display": "Contract Nursing Home/Community Nursing Home"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32124",
+          "display": "State Veterans Home"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32125",
+          "display": "Sharing Agreements"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32126",
+          "display": "Other Federal Agency"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32127",
+          "display": "Dental Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "32128",
+          "display": "Vision Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "322",
+          "display": "Non-veteran care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3221",
+          "display": "Civilian Health and Medical Program for the VA (CHAMPVA)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3222",
+          "display": "Spina Bifida Health Care Program (SB)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3223",
+          "display": "Children of Women Vietnam Veterans (CWVV)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3229",
+          "display": "Other non-veteran care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "33",
+          "display": "Indian Health Service or Tribe"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "331",
+          "display": "Indian Health Service - Regular"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "332",
+          "display": "Indian Health Service - Contract"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "333",
+          "display": "Indian Health Service - Managed Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "334",
+          "display": "Indian Tribe - Sponsored Coverage"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "34",
+          "display": "HRSA Program"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "341",
+          "display": "Title V (MCH Block Grant)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "342",
+          "display": "Migrant Health Program"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "343",
+          "display": "Ryan White Act"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "349",
+          "display": "Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "35",
+          "display": "Black Lung"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "36",
+          "display": "State Government"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "361",
+          "display": "State SCHIP program (codes for individual states)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "362",
+          "display": "Specific state programs (list/ local code)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "369",
+          "display": "State, not otherwise specified (other state)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "37",
+          "display": "Local Government"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "371",
+          "display": "Local - Managed care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3711",
+          "display": "HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3712",
+          "display": "PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3713",
+          "display": "POS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "372",
+          "display": "FFS/Indemnity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "379",
+          "display": "Local, not otherwise specified (other local, county)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "38",
+          "display": "Other Government (Federal, State, Local not specified)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "381",
+          "display": "Federal, State, Local not specified managed care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3811",
+          "display": "Federal, State, Local not specified - HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3812",
+          "display": "Federal, State, Local not specified - PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3813",
+          "display": "Federal, State, Local not specified - POS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "3819",
+          "display": "Federal, State, Local not specified - not specified managed care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "382",
+          "display": "Federal, State, Local not specified - FFS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "389",
+          "display": "Federal, State, Local not specified - Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "39",
+          "display": "Other Federal"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "391",
+          "display": "Federal Employee Health Plan - Use when known"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "4",
+          "display": "DEPARTMENTS OF CORRECTIONS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "41",
+          "display": "Corrections Federal"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "42",
+          "display": "Corrections State"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "43",
+          "display": "Corrections Local"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "44",
+          "display": "Corrections Unknown Level"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "5",
+          "display": "PRIVATE HEALTH INSURANCE"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "51",
+          "display": "Managed Care (Private)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "511",
+          "display": "Commercial Managed Care - HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "512",
+          "display": "Commercial Managed Care - PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "513",
+          "display": "Commercial Managed Care - POS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "514",
+          "display": "Exclusive Provider Organization"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "515",
+          "display": "Gatekeeper PPO (GPPO)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "516",
+          "display": "Commercial Managed Care - Pharmacy Benefit Manager"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "517",
+          "display": "Commercial Managed Care - Dental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "519",
+          "display": "Managed Care, Other (non HMO)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "52",
+          "display": "Private Health Insurance - Indemnity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "521",
+          "display": "Commercial Indemnity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "522",
+          "display": "Self-insured (ERISA) Administrative Services Only (ASO) plan"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "523",
+          "display": "Medicare supplemental policy (as second payer)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "524",
+          "display": "Indemnity Insurance - Dental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "529",
+          "display": "Private health insurance--other commercial Indemnity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "53",
+          "display": "Managed Care (private) or private health insurance (indemnity), not otherwise specified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "54",
+          "display": "Organized Delivery System"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "55",
+          "display": "Small Employer Purchasing Group"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "56",
+          "display": "Specialized Stand-Alone Plan"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "561",
+          "display": "Dental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "562",
+          "display": "Vision"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "59",
+          "display": "Other Private Insurance"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "6",
+          "display": "BLUE CROSS/BLUE SHIELD"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "61",
+          "display": "BC Managed Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "611",
+          "display": "BC Managed Care - HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "612",
+          "display": "BC Managed Care - PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "613",
+          "display": "BC Managed Care - POS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "614",
+          "display": "BC Managed Care - Dental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "619",
+          "display": "BC Managed Care - Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "62",
+          "display": "BC Insurance Indemnity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "621",
+          "display": "BC Indemnity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "622",
+          "display": "BC Self-insured (ERISA) Administrative Services Only (ASO)Plan"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "623",
+          "display": "BC Medicare Supplemental Plan"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "629",
+          "display": "BC Indemnity - Dental"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "7",
+          "display": "MANAGED CARE, UNSPECIFIED (to be used only if one can't distinguish public from private)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "71",
+          "display": "HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "72",
+          "display": "PPO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "73",
+          "display": "POS"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "79",
+          "display": "Other Managed Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "8",
+          "display": "NO PAYMENT from an Organization/Agency/Program/Private Payer Listed"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "81",
+          "display": "Self-pay (Includes applicants for insurance and Medicaid applicants)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "82",
+          "display": "No Charge"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "821",
+          "display": "Charity"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "822",
+          "display": "Professional Courtesy"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "823",
+          "display": "Research/Clinical Trial"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "83",
+          "display": "Refusal to Pay/Bad Debt"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "84",
+          "display": "Hill Burton Free Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "85",
+          "display": "Research/Donor"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "89",
+          "display": "No Payment, Other"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "9",
+          "display": "MISCELLANEOUS/OTHER"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "91",
+          "display": "Foreign National"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "92",
+          "display": "Other (Non-government)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "93",
+          "display": "Disability Insurance"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "94",
+          "display": "Long-term Care Insurance"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "95",
+          "display": "Worker's Compensation"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "951",
+          "display": "Worker's Comp HMO"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "953",
+          "display": "Worker's Comp Fee-for-Service"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "954",
+          "display": "Worker's Comp Other Managed Care"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "959",
+          "display": "Worker's Comp, Other unspecified"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "96",
+          "display": "Auto Insurance (includes no fault)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "97",
+          "display": "Legal Liability / Liability Insurance"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "98",
+          "display": "Other specified but not otherwise classifiable (includes Hospice - Unspecified plan)"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "99",
+          "display": "No Typology Code available for payment source"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.3.221.5",
+          "version": "9.2",
+          "code": "9999",
+          "display": "Unavailable / No Payer Specified / Blank"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.114222.4.11.3591"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1068",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1068",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1068"
+      } ],
+      "version": "20171219",
+      "name": "Historyofbilateralmastectomy",
+      "title": "History of bilateral mastectomy",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "version": "2021",
+          "code": "Z90.13",
+          "display": "Acquired absence of bilateral breasts and nipples"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "136071000119101",
+          "display": "History of bilateral prophylactic mastectomy (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "428529004",
+          "display": "History of bilateral mastectomy (situation)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1068"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "denom-EXM125-1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
+      },
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99201",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires these 3 key components: A problem focused history; A problem focused examination; Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are self limited or minor. Typically, 10 minutes are spent face-to-face with the patient and/or family."
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/denom-EXM125"
+      },
+      "period": {
+        "start": "2020-01-16T08:30:00",
+        "end": "2020-01-20T08:30:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/denom-EXM125-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "inactive-condition",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "shareable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "computable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "publishable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "structured"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+        "valueContactDetail": {
+          "name": "Bryn Rhodes"
+        }
+      } ],
+      "url": "http://fhir.org/guides/cqf/common/ValueSet/inactive-condition",
+      "version": "0.1.0",
+      "name": "CQFInactiveCondition",
+      "title": "CQF Inactive Condition",
+      "status": "active",
+      "experimental": false,
+      "date": "2019-07-21",
+      "publisher": "Health Level 7 International - Clinical Decision Support WG",
+      "contact": [ {
+        "telecom": [ {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+        } ]
+      } ],
+      "description": "Inactive condition clinical status codes",
+      "purpose": "Used to specify the set of clinical status codes that are considered inactive",
+      "copyright": "© HL7 2016+.",
+      "compose": {
+        "include": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "concept": [ {
+            "code": "inactive",
+            "display": "Inactive"
+          }, {
+            "code": "remission",
+            "display": "Remission"
+          }, {
+            "code": "resolved",
+            "display": "Resolved"
+          } ]
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/inactive-condition"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.114222.4.11.836",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.114222.4.11.836"
+      } ],
+      "version": "20121025",
+      "name": "Race",
+      "title": "Race",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "1002-5",
+          "display": "American Indian or Alaska Native"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2028-9",
+          "display": "Asian"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2054-5",
+          "display": "Black or African American"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2076-8",
+          "display": "Native Hawaiian or Other Pacific Islander"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2106-3",
+          "display": "White"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/PHRaceAndEthnicityCDC",
+          "version": "1.2",
+          "code": "2131-1",
+          "display": "Other Race"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.114222.4.11.836"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.666.5.307",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.666.5.307"
+      } ],
+      "version": "20200307",
+      "name": "EncounterInpatient",
+      "title": "Encounter Inpatient",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:05-06:00",
+        "contains": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "183452005",
+          "display": "Emergency hospital admission (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "32485007",
+          "display": "Hospital admission (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "8715000",
+          "display": "Hospital admission, elective (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.666.5.307"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1005",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1005",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1005"
+      } ],
+      "version": "20190315",
+      "name": "BilateralMastectomy",
+      "title": "Bilateral Mastectomy",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:05-06:00",
+        "contains": [ {
+          "system": "http://www.cms.gov/Medicare/Coding/ICD10",
+          "version": "2021",
+          "code": "0HTV0ZZ",
+          "display": "Resection of Bilateral Breast, Open Approach"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
+          "version": "2013",
+          "code": "85.42",
+          "display": "Bilateral simple mastectomy"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
+          "version": "2013",
+          "code": "85.44",
+          "display": "Bilateral extended simple mastectomy"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
+          "version": "2013",
+          "code": "85.46",
+          "display": "Bilateral radical mastectomy"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
+          "version": "2013",
+          "code": "85.48",
+          "display": "Bilateral extended radical mastectomy"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "14693006",
+          "display": "Bilateral subcutaneous mammectomy (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "14714006",
+          "display": "Bilateral mastectomy with excision of bilateral regional lymph nodes (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "17086001",
+          "display": "Modified radical mastectomy, bilateral (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "22418005",
+          "display": "Bilateral simple mastectomy (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "27865001",
+          "display": "Bilateral mastectomy (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "456903003",
+          "display": "Bilateral extended radical mastectomy (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "52314009",
+          "display": "Bilateral mastectomy extended simple (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "60633004",
+          "display": "Bilateral subcutaneous mammectomy with synchronous implant (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "726636007",
+          "display": "Prophylactic bilateral mastectomy (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "76468001",
+          "display": "Bilateral radical mastectomy (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "836436008",
+          "display": "Simple mastectomy of bilateral breasts using robotic assistance (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "870629001",
+          "display": "Bilateral mastectomy for female to male transsexual (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1005"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.101.12.1080",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.101.12.1080"
+      } ],
+      "version": "20210220",
+      "name": "TelephoneVisits",
+      "title": "Telephone Visits",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "98966",
+          "display": "Telephone assessment and management service provided by a qualified nonphysician health care professional to an established patient, parent, or guardian not originating from a related assessment and management service provided within the previous 7 days nor leading to an assessment and management service or procedure within the next 24 hours or soonest available appointment; 5-10 minutes of medical discussion"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "98967",
+          "display": "Telephone assessment and management service provided by a qualified nonphysician health care professional to an established patient, parent, or guardian not originating from a related assessment and management service provided within the previous 7 days nor leading to an assessment and management service or procedure within the next 24 hours or soonest available appointment; 11-20 minutes of medical discussion"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "98968",
+          "display": "Telephone assessment and management service provided by a qualified nonphysician health care professional to an established patient, parent, or guardian not originating from a related assessment and management service provided within the previous 7 days nor leading to an assessment and management service or procedure within the next 24 hours or soonest available appointment; 21-30 minutes of medical discussion"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99441",
+          "display": "Telephone evaluation and management service by a physician or other qualified health care professional who may report evaluation and management services provided to an established patient, parent, or guardian not originating from a related E/M service provided within the previous 7 days nor leading to an E/M service or procedure within the next 24 hours or soonest available appointment; 5-10 minutes of medical discussion"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99442",
+          "display": "Telephone evaluation and management service by a physician or other qualified health care professional who may report evaluation and management services provided to an established patient, parent, or guardian not originating from a related E/M service provided within the previous 7 days nor leading to an E/M service or procedure within the next 24 hours or soonest available appointment; 11-20 minutes of medical discussion"
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99443",
+          "display": "Telephone evaluation and management service by a physician or other qualified health care professional who may report evaluation and management services provided to an established patient, parent, or guardian not originating from a related E/M service provided within the previous 7 days nor leading to an E/M service or procedure within the next 24 hours or soonest available appointment; 21-30 minutes of medical discussion"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185317003",
+          "display": "Telephone encounter (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "314849005",
+          "display": "Telephone contact by consultant (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "386472008",
+          "display": "Telephone consultation (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "386473003",
+          "display": "Telephone follow-up (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "401267002",
+          "display": "Telephone triage encounter (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "denom-EXM125",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        } ]
+      } ],
+      "identifier": [ {
+        "use": "usual",
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          } ]
+        },
+        "system": "http://hospital.smarthealthit.org",
+        "value": "999999995"
+      } ],
+      "name": [ {
+        "family": "Dunn",
+        "given": [ "June" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1966-01-01"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/denom-EXM125"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "numer-EXM125-1",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" ]
+      },
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99201",
+          "display": "Office or other outpatient visit for the evaluation and management of a new patient, which requires these 3 key components: A problem focused history; A problem focused examination; Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are self limited or minor. Typically, 10 minutes are spent face-to-face with the patient and/or family."
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/numer-EXM125"
+      },
+      "period": {
+        "start": "2020-01-16T08:30:00-00:00",
+        "end": "2020-01-20T08:30:00-00:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/numer-EXM125-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.526.3.1240",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.526.3.1240"
+      } ],
+      "version": "20190315",
+      "name": "AnnualWellnessVisit",
+      "title": "Annual Wellness Visit",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:05-06:00",
+        "contains": [ {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G0438",
+          "display": "Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit"
+        }, {
+          "system": "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+          "version": "2021",
+          "code": "G0439",
+          "display": "Annual wellness visit, includes a personalized prevention plan of service (pps), subsequent visit"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "444971000124105",
+          "display": "Annual wellness visit (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "456201000124103",
+          "display": "Medicare Annual Wellness Visit (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.526.3.1240"
+    }
+  }, {
+    "resource": {
+      "resourceType": "DiagnosticReport",
+      "id": "numer-EXM125-3",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note" ]
+      },
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "24604-1",
+          "display": "MG Breast Diagnostic Limited Views"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/numer-EXM125"
+      },
+      "effectivePeriod": {
+        "start": "2020-01-17T12:30:00",
+        "end": "2020-01-17T12:30:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "DiagnosticReport/numer-EXM125-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.101.12.1016",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.101.12.1016"
+      } ],
+      "version": "20180310",
+      "name": "HomeHealthcareServices",
+      "title": "Home Healthcare Services",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99341",
+          "display": "Home visit for the evaluation and management of a new patient, which requires these 3 key components: A problem focused history; A problem focused examination; and Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of low severity. Typically, 20 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99342",
+          "display": "Home visit for the evaluation and management of a new patient, which requires these 3 key components: An expanded problem focused history; An expanded problem focused examination; and Medical decision making of low complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of moderate severity. Typically, 30 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99343",
+          "display": "Home visit for the evaluation and management of a new patient, which requires these 3 key components: A detailed history; A detailed examination; and Medical decision making of moderate complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of moderate to high severity. Typically, 45 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99344",
+          "display": "Home visit for the evaluation and management of a new patient, which requires these 3 key components: A comprehensive history; A comprehensive examination; and Medical decision making of moderate complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of high severity. Typically, 60 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99345",
+          "display": "Home visit for the evaluation and management of a new patient, which requires these 3 key components: A comprehensive history; A comprehensive examination; and Medical decision making of high complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the patient is unstable or has developed a significant new problem requiring immediate physician attention. Typically, 75 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99347",
+          "display": "Home visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: A problem focused interval history; A problem focused examination; Straightforward medical decision making. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are self limited or minor. Typically, 15 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99348",
+          "display": "Home visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: An expanded problem focused interval history; An expanded problem focused examination; Medical decision making of low complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of low to moderate severity. Typically, 25 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99349",
+          "display": "Home visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: A detailed interval history; A detailed examination; Medical decision making of moderate complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are moderate to high severity. Typically, 40 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "99350",
+          "display": "Home visit for the evaluation and management of an established patient, which requires at least 2 of these 3 key components: A comprehensive interval history; A comprehensive examination; Medical decision making of moderate to high complexity. Counseling and/or coordination of care with other physicians, other qualified health care professionals, or agencies are provided consistent with the nature of the problem(s) and the patient's and/or family's needs. Usually, the presenting problem(s) are of moderate to high severity. The patient may be unstable or may have developed a significant new problem requiring immediate physician attention. Typically, 60 minutes are spent face-to-face with the patient and/or family."
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185460008",
+          "display": "Home visit request by patient (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185462000",
+          "display": "Home visit request by relative (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185466002",
+          "display": "Home visit for urgent condition (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185467006",
+          "display": "Home visit for acute condition (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185468001",
+          "display": "Home visit for chronic condition (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "185470005",
+          "display": "Home visit elderly assessment (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "225929007",
+          "display": "Joint home visit (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "315205008",
+          "display": "Bank holiday home visit (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "439708006",
+          "display": "Home visit (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "698704008",
+          "display": "Home visit for rheumatology service (procedure)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "704126008",
+          "display": "Home visit for anticoagulant drug monitoring (procedure)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1070",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1070",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1070"
+      } ],
+      "version": "20171216",
+      "name": "StatusPostRightMastectomy",
+      "title": "Status Post Right Mastectomy",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "version": "2021",
+          "code": "Z90.11",
+          "display": "Acquired absence of right breast and nipple"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "137681000119108",
+          "display": "History of prophylactic mastectomy of right breast (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "429242008",
+          "display": "History of right mastectomy (situation)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1070"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.464.1003.198.12.1071",
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1071",
+      "identifier": [ {
+        "system": "urn:ietf:rfc:3986",
+        "value": "2.16.840.1.113883.3.464.1003.198.12.1071"
+      } ],
+      "version": "20171216",
+      "name": "UnilateralMastectomy,UnspecifiedLaterality",
+      "title": "Unilateral Mastectomy, Unspecified Laterality",
+      "status": "active",
+      "experimental": false,
+      "publisher": "NLM",
+      "expansion": {
+        "identifier": "20210506",
+        "timestamp": "2021-07-19T17:22:06-06:00",
+        "contains": [ {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "version": "2021",
+          "code": "Z90.10",
+          "display": "Acquired absence of unspecified breast and nipple"
+        }, {
+          "system": "http://terminology.hl7.org/CodeSystem/icd9cm",
+          "version": "2013",
+          "code": "V45.71",
+          "display": "Acquired absence of breast and nipple"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2017-09",
+          "code": "22964006",
+          "display": "Unilateral simple mastectomy (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2017-09",
+          "code": "72269009",
+          "display": "Unilateral modified radical mastectomy (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2017-09",
+          "code": "73359007",
+          "display": "Unilateral mastectomy (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2017-09",
+          "code": "8115005",
+          "display": "Unilateral radical mastectomy (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2017-09",
+          "code": "88764002",
+          "display": "Unilateral extended simple mastectomy (situation)"
+        }, {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "248802009",
+          "display": "Absence of breast (finding)"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.464.1003.198.12.1071"
+    }
+  } ]
+}
