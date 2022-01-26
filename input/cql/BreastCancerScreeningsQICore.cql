@@ -1,13 +1,12 @@
-library BreastCancerScreeningsFHIR version '0.0.009'
+library BreastCancerScreeningsQICore version '0.0.009'
 
-using FHIR version '4.0.1'
+using QICore version '4.1.0'
 
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 include FHIRCommon version '4.0.1' called FC
 include CQMCommon version '0.1.0' called Global
-include QICoreElements version '4.1.0' called QICore
-include SupplementalDataElementsFHIR4 version '2.0.000' called SDE
-include AdultOutpatientEncountersFHIR4 version '2.2.000' called AdultOutpatientEncounters
+include SupplementalDataElementsQICore version '2.0.000' called SDE
+include AdultOutpatientEncountersQICore version '2.2.000' called AdultOutpatientEncounters
 //include AdvancedIllnessandFrailtyExclusionECQMFHIR4 version '5.17.000' called FrailtyLTI
 //include PalliativeCareFHIR version '0.6.000' called PalliativeCare
 //include CumulativeMedicationDurationFHIR4 version '1.0.000' called CMD
@@ -48,23 +47,22 @@ define "Denominator":
 
 // NOTE: Shouldn't this be checking for clinicalStatus at least, if not also verification status?
 define "Right Mastectomy Diagnosis":
-  ((QICore.Condition StatusPostRightMastectomy
-      where StatusPostRightMastectomy.code in "Status Post Right Mastectomy"
+  (([Condition: "Status Post Right Mastectomy"] StatusPostRightMastectomy
     )
-      union (QICore.Condition UnilateralMastectomy
-          where UnilateralMastectomy.code in "Unilateral Mastectomy, Unspecified Laterality"
-            and UnilateralMastectomy.bodySite in "Right"
+      union ([Condition: "Unilateral Mastectomy, Unspecified Laterality"] UnilateralMastectomy
+        where UnilateralMastectomy.bodySite in "Right"
       )
   ) RightMastectomy
-    where RightMastectomy.prevalenceInterval() starts on or before end of "Measurement Period"
+    // TODO: Need a prevalenceInterval
+    //where RightMastectomy.prevalenceInterval() starts on or before end of "Measurement Period"
 
 define "Right Mastectomy Procedure":
-  QICore.ProcedureCompleted UnilateralMastectomyRightPerformed
-    where UnilateralMastectomyRightPerformed.code in "Unilateral Mastectomy Right"
-      and UnilateralMastectomyRightPerformed.performed.toInterval() ends on or before end of "Measurement Period"
+  [Procedure: "Unilateral Mastectomy Right"] UnilateralMastectomyRightPerformed
+    // TODO: toInterval() for System.DateTime and Interval<System.DateTime>
+    //where UnilateralMastectomyRightPerformed.performed.toInterval() ends on or before end of "Measurement Period"
 
 define "Left Mastectomy Procedure":
-  QICore.ProcedureCompleted UnilateralMastectomyLeftPerformed
+  QICore.ProcedurePerformed UnilateralMastectomyLeftPerformed
     where UnilateralMastectomyLeftPerformed.code in "Unilateral Mastectomy Left"
       and UnilateralMastectomyLeftPerformed.performed.toInterval() ends on or before end of "Measurement Period"
 
@@ -76,12 +74,12 @@ define "Numerator":
   )
 
 define "Telehealth Services":
-  QICore.EncounterFinished TelehealthEncounter
+  QICore.EncounterPerformed TelehealthEncounter
     where (TelehealthEncounter.type in "Online Assessments" or TelehealthEncounter.type in "Telephone Visits")
       and TelehealthEncounter.period.toInterval() during "Measurement Period"
 
 define "Bilateral Mastectomy Procedure":
-  QICore.ProcedureCompleted BilateralMastectomyPerformed
+  QICore.ProcedurePerformed BilateralMastectomyPerformed
     where BilateralMastectomyPerformed.code in "Bilateral Mastectomy"
       and BilateralMastectomyPerformed.performed.toInterval() ends on or before end of "Measurement Period"
 

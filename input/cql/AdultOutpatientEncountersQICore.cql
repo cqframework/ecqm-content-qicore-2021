@@ -1,9 +1,6 @@
-library AdultOutpatientEncountersFHIR4 version '2.2.000'
+library AdultOutpatientEncountersQICore version '2.2.000'
 
-using FHIR version '4.0.1'
-
-include FHIRHelpers version '4.0.1' called FHIRHelpers
-include QICoreElements version '4.1.0' called QICore
+using QICore version '4.1.0'
 
 include CQMCommon version '0.1.0' called Global
 
@@ -18,14 +15,14 @@ parameter "Measurement Period" Interval<DateTime>
 context Patient
 
 define "Qualifying Encounters":
-  QICore.EncounterFinished E
-    where (E.type in "Office Visit"
-        or E.type in "Annual Wellness Visit"
-        or E.type in "Preventive Care Services - Established Office Visit, 18 and Up"
-        or E.type in "Preventive Care Services-Initial Office Visit, 18 and Up"
-        or E.type in "Home Healthcare Services"
-      )
-      and E.period.toInterval() during "Measurement Period"
+  ([QICore.Encounter: "Office Visit"]
+    union [QICore.Encounter: "Annual Wellness Visit"]
+    union [QICore.Encounter: "Preventive Care Services - Established Office Visit, 18 and Up"]
+    union [QICore.Encounter: "Preventive Care Services-Initial Office Visit, 18 and Up"]
+    union [QICore.Encounter: "Home Healthcare Services"]
+  ) E
+    where E.status = 'finished'
+      and E.period during "Measurement Period"
 
 /*
 define "Qualifying Encounters":

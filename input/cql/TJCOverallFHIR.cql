@@ -57,7 +57,7 @@ define "Ischemic Stroke Encounters with Discharge Disposition":
 
 // Translator issue with 1.4.9-SNAPSHOT: https://github.com/cqframework/clinical_quality_language/issues/511
 define "Non Elective Inpatient Encounter":
-  QICore.EncounterPerformed NonElectiveEncounter
+  QICore.EncounterFinished NonElectiveEncounter
     where NonElectiveEncounter.type in "Non-Elective Inpatient Encounter"
       and Global.LengthInDays(NonElectiveEncounter.period) <= 120
       and NonElectiveEncounter.period ends during day of "Measurement Period"

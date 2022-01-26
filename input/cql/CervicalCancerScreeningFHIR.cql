@@ -72,7 +72,7 @@ define "Numerator":
 
 define "Absence of Cervix":
   (
-    QICore.ProcedurePerformed NoCervixProcedure
+    QICore.ProcedureCompleted NoCervixProcedure
       where NoCervixProcedure.code in "Hysterectomy with No Residual Cervix"
         and NoCervixProcedure.performed.toInterval() ends on or before end of "Measurement Period"
   )

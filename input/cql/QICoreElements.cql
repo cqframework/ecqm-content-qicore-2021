@@ -49,7 +49,7 @@ define Condition:
 define Encounter:
   [Encounter]
 
-define EncounterPerformed:
+define EncounterFinished:
   Encounter E
     where E.status = 'finished'
 
@@ -127,7 +127,7 @@ define Procedure:
   [Procedure] P
     where P.status in { 'preparation', 'in-progress', 'on-hold', 'completed' }
 
-define ProcedurePerformed:
+define ProcedureCompleted:
   Procedure P
     where P.status = 'completed'
 
